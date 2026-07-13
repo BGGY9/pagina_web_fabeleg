@@ -16,6 +16,14 @@
     scroll-behavior: smooth;
 }
 
+/* Control de tamaño para el nuevo logo en imagen */
+.logo-img {
+    height: 45px; /* Puedes subir o bajar este número según el diseño de tu logo */
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
 body {
     /* Fondo claro color arena/brisa marina */
     background-color: #27cff9c3;
@@ -129,7 +137,7 @@ body {
 .hero-parallax-bg {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    background-image: url('https://cdn.pixabay.com/photo/2022/08/26/14/31/bay-7412651_1280.jpg');
+    background-image: url('https://lh3.googleusercontent.com/d/14zpjx0kFzcagU9yUaddH_wsuyi9da1ex');
     background-size: cover;
     background-position: center;
     transform: scale(1.05);
@@ -515,7 +523,7 @@ body {
 }
 
 .btn-giant-whatsapp {
-    background: #f59e0b; /* Amarillo sol resalta hermoso contra el fondo azul agua */
+    background: hwb(107 6% 34%); /* Amarillo sol resalta hermoso contra el fondo azul agua */
     color: #ffffff;
     padding: 22px 45px;
     border-radius: 50px;
@@ -532,8 +540,8 @@ body {
 
 .btn-giant-whatsapp:hover {
     transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 15px 40px rgba(245, 158, 11, 0.6);
-    background: #d97706;
+    box-shadow: 0 15px 40px rgba(11, 226, 245, 0.6);
+    background: hsl(194, 88%, 80%);
 }
 
 /* FOOTER */

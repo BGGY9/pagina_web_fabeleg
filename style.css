@@ -18,7 +18,7 @@
 
 /* Control de tamaño para el nuevo logo en imagen */
 .logo-img {
-    height: 45px; /* Puedes subir o bajar este número según el diseño de tu logo */
+    height: 60px; /* Puedes subir o bajar este número según el diseño de tu logo */
     width: auto;
     object-fit: contain;
     display: block;

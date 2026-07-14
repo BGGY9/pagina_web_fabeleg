@@ -1,11 +1,6 @@
 /* ==========================================================================
    LANDING PAGE INDUSTRIAL NAVAL: FABRICACIONES ELÉCTRICAS GENERALES
    PALETA DE COLORES: TEMA MAR, PLAYA Y AGUA CLARA
-   - Arena Blanca/Brisa (Fondo Principal): #f8fafc , #ffffff
-   - Agua Cristalina (Fondos Secundarios): #e0f2fe , #bae6fd
-   - Azul Océano (Textos oscuros y estructura): #0f172a , #1e293b
-   - Celeste Vibrante (Energía y Acentos): #0ea5e9 , #0284c7
-   - Amarillo Sol (Llamados a la Acción): #f59e0b , #eab308
    ========================================================================== */
 
 * {
@@ -16,23 +11,21 @@
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: #78a6d492;
+    color: #334155;
+    overflow-x: hidden;
+}
+
 /* Control de tamaño para el nuevo logo en imagen */
 .logo-img {
-    height: 60px; /* Puedes subir o bajar este número según el diseño de tu logo */
+    height: 70px;
     width: auto;
     object-fit: contain;
     display: block;
 }
 
-body {
-    /* Fondo claro color arena/brisa marina */
-    background-color: #27cff9c3;
-    /* Texto principal azul marino oscuro para máxima legibilidad */
-    color: #334155;
-    overflow-x: hidden;
-}
-
-/* HELPER CLASSES CORREGIDAS (Compatibilidad total de colores) */
+/* HELPER CLASSES CORREGIDAS */
 .text-yellow { color: #f59e0b; }
 .text-green { color: #469e23; }
 .text-sky { color: #0284c7; }
@@ -45,15 +38,14 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    /* Efecto cristal claro */
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(158, 213, 219, 0.477);
     backdrop-filter: blur(12px);
     padding: 15px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    border-bottom: 2px solid rgba(2, 132, 199, 0.2);
+    border-bottom: 2px solid rgba(198, 185, 255, 0.2);
     box-shadow: 0 4px 30px rgba(14, 165, 233, 0.1);
 }
 
@@ -63,31 +55,6 @@ body {
     gap: 12px;
 }
 
-.logo-icon {
-    font-size: 28px;
-    color: #0284c7;
-    animation: anchorSway 4s ease-in-out infinite;
-}
-
-.logo-text {
-    display: flex;
-    flex-direction: column;
-}
-
-.company-name {
-    font-size: 18px;
-    font-weight: 900;
-    letter-spacing: 0.5px;
-    color: #0f172a;
-}
-
-.company-sub {
-    font-size: 12px;
-    font-weight: 600;
-    color: #0ea5e9;
-    letter-spacing: 1px;
-}
-
 .nav-menu {
     display: flex;
     align-items: center;
@@ -95,7 +62,7 @@ body {
 }
 
 .nav-menu a {
-    color: #475569;
+    color: #0b62dbaf;
     text-decoration: none;
     font-size: 15px;
     font-weight: 600;
@@ -103,7 +70,7 @@ body {
 }
 
 .nav-menu a:hover {
-    color: #f59e0b;
+    color: #000000;
 }
 
 .nav-whatsapp-btn {
@@ -140,13 +107,11 @@ body {
     background-image: url('https://lh3.googleusercontent.com/d/14zpjx0kFzcagU9yUaddH_wsuyi9da1ex');
     background-size: cover;
     background-position: center;
-    transform: scale(1.05);
 }
 
 .hero-overlay {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    /* Degradado vibrante simulando agua de mar clara */
     background: linear-gradient(135deg, rgba(14, 165, 233, 0.85) 30%, rgba(2, 132, 199, 0.6) 100%);
     z-index: 2;
 }
@@ -187,7 +152,7 @@ body {
 
 .hero-subtitle {
     font-size: 18px;
-    color: #f8fafc;
+    color: #fcf8f8;
     line-height: 1.6;
     max-width: 850px;
     margin: 0 auto 40px auto;
@@ -262,7 +227,7 @@ body {
 .section-tagline {
     font-size: 13px;
     font-weight: 800;
-    color: #000000;
+    color: #0284c7;
     letter-spacing: 3px;
     display: block;
     margin-bottom: 10px;
@@ -295,32 +260,32 @@ body {
 }
 
 .identity-card {
-    background: #3cc3f5f2;
+    background: linear-gradient(135deg, rgba(11, 119, 168, 0.59) 0%, transparent 100%);
     padding: 45px 35px;
     border-radius: 12px;
     position: relative;
     overflow: hidden;
     border: 1px solid rgba(14, 165, 233, 0.1);
     box-shadow: 0 10px 30px rgba(14, 165, 233, 0.05);
-    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .identity-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(58, 187, 247, 0.538) 0%;
+    box-shadow: 0 15px 40px rgba(2, 132, 199, 0.1);
 }
 
 .card-border-glow {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    background: linear-gradient(135deg, rgba(58, 187, 247, 0.632) 0%, transparent 100%);
+    background: linear-gradient(135deg, rgba(11, 119, 168, 0.59) 0%, transparent 100%);
     pointer-events: none;
 }
 
 .identity-icon-box {
     width: 65px;
     height: 65px;
-    background: #f2f2f2;
+    background: #f0f9ff;
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -332,20 +297,20 @@ body {
 
 .identity-card h3 {
     font-size: 22px;
-    color: #0f172a;
+    color: #000000;
     margin-bottom: 15px;
 }
 
 .identity-card p {
     font-size: 15.5px;
-    color: #475569;
+    color: #000000;
     line-height: 1.7;
 }
 
 .full-width-card {
     grid-column: 1 / -1;
-    background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
-    border-left: 5px solid #072c60;
+    background: linear-gradient(135deg, rgba(11, 119, 168, 0.59) 0%, transparent 100%);
+    border-left: 5px solid #0284c7;
 }
 
 .policy-layout {
@@ -361,7 +326,6 @@ body {
 /* SECCIÓN SERVICIOS */
 .services-section {
     padding: 120px 0;
-    /* Fondo que simula agua poco profunda */
     background-color: #e0f2fe; 
 }
 
@@ -380,15 +344,14 @@ body {
     transition: all 0.4s ease;
 }
 
-.service-image-mask, .service-image-mask-massi {
+.service-image-mask {
     height: 180px; 
     background-size: cover;
     background-position: center;
     position: relative;
-    /* Reducimos el oscurecimiento para mantener el tono claro/playero */
     filter: brightness(0.85); 
     border-bottom: 3px solid #0284c7;
-    transition: filter 0.3s ease, transform 0.5s ease;
+    transition: filter 0.3s ease;
 }
 
 .mask-rotativas { background-image: url('https://cdn.pixabay.com/photo/2023/04/06/09/19/motor-7903404_1280.jpg'); }
@@ -397,8 +360,7 @@ body {
 .mask-pruebas { background-image: url('https://cdn.pixabay.com/photo/2015/12/07/10/53/electrician-1080573_1280.jpg'); }
 .mask-massi { background-image: url('https://lh3.googleusercontent.com/d/1ORdhJUKKJpPbvsirIcSfW7oFwIxZS1If');}
 
-.service-card:hover .service-image-mask,
-.service-card:hover .service-image-mask-massi {
+.service-card:hover .service-image-mask {
     filter: brightness(1.05);
 }
 
@@ -431,8 +393,8 @@ body {
 }
 
 .service-card:hover .service-icon-circle {
-    background: #89d4ffd7;
-    border-color: #89d4ffd7;
+    background: #0284c7;
+    border-color: #0284c7;
     color: #ffffff;
 }
 
@@ -477,6 +439,155 @@ body {
     animation: lightPulse 1.4s ease-in-out infinite;
 }
 
+/* ==========================================================================
+   SECCIÓN DE MARCAS Y CARRUSEL INFINITO (CORREGIDO)
+   ========================================================================== */
+.brands-section {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+/* Contenedor principal que oculta el desborde en el eje X */
+.logo-slider-wrapper {
+    overflow: hidden;
+    padding: 30px 0;
+    position: relative;
+    width: 100%;
+}
+
+/* El contenedor interno flex */
+.logo-slider {
+    display: flex;
+    width: max-content;
+}
+
+/* Cada grupo/track de imágenes */
+.logo-slide-track {
+    display: flex;
+    align-items: center;
+    gap: 80px; 
+    padding-right: 80px; /* Sincroniza con el gap para fluidez */
+    animation: scroll 25s linear infinite;
+}
+
+/* Formato unificado de imágenes en carrusel */
+.logo-slide-track img {
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(0%) opacity(80%);
+    transition: all 0.3s ease;
+}
+
+.logo-slide-track img:hover {
+    filter: grayscale(0%) opacity(100%);
+    transform: scale(1.1);
+}
+
+/* Pausar animación al hacer hover */
+.logo-slider-wrapper:hover .logo-slide-track {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* ==========================================================================
+   PROYECTOS Y GALERÍA DINÁMICA
+   ========================================================================== */
+.projects-section-custom {
+    padding: 120px 0;
+    background-color: #ffffff;
+}
+
+.proyecto-unica-grid {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.project-card-massi {
+    width: 100%;
+    max-width: 850px; 
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(233, 14, 14, 0.08);
+    border: 1px solid rgba(14, 165, 233, 0.1);
+    overflow: hidden; /* Corta cualquier desborde global de la tarjeta */
+}
+
+.project-card-massi .mask-massi {
+    height: auto; 
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+    border-bottom: 3px solid #3c898f; 
+    position: relative;
+    overflow: hidden; /* ¡CLAVE! Evita que las imágenes se salgan al hacer zoom */
+}
+
+.mask-massi .hover-gallery {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 2;
+    overflow: hidden; /* Doble seguridad para recortar el contenido */
+}
+
+.mask-massi .gallery-img {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transform: scale(1); /* Iniciamos en escala normal */
+    transition: transform 0.6s ease-out;
+}
+
+.project-card-massi:hover .mask-massi {
+    background-image: none !important; 
+}
+
+.project-card-massi:hover .hover-gallery {
+    opacity: 1; 
+}
+
+.project-card-massi:hover .gallery-img {
+    animation: marineGalleryCycle 12s infinite linear;
+}
+
+.project-card-massi:hover .img-1 { animation-delay: 0s; }
+.project-card-massi:hover .img-2 { animation-delay: 3s; }
+.project-card-massi:hover .img-3 { animation-delay: 6s; }
+.project-card-massi:hover .img-4 { animation-delay: 9s; }
+
+@keyframes marineGalleryCycle {
+    0% { 
+        opacity: 0; 
+        transform: scale(1.05); /* Un zoom sutil (5%) que se mantendrá dentro de los límites ocultos */
+    }
+    4% { 
+        opacity: 1; 
+        transform: scale(1); /* Se encoge suavemente al tamaño original */
+    }
+    25% { 
+        opacity: 1; 
+        transform: scale(1); 
+    }
+    29% { 
+        opacity: 0; 
+        transform: scale(1.05); /* Transición de salida suave */
+    }
+    100% { 
+        opacity: 0; 
+    }
+}
 /* CALL TO ACTION MARÍTIMO */
 .peruvian-fleet-cta {
     position: relative;
@@ -496,8 +607,7 @@ body {
 .cta-overlay {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    /* Overlay vibrante que invita a la acción */
-    background: linear-gradient(to bottom, rgba(14, 165, 233, 0.9), rgba(2, 132, 199, 0.95));
+    background: linear-gradient(to bottom, rgba(123, 180, 206, 0.9), rgba(2, 132, 199, 0.95));
     z-index: 2;
 }
 
@@ -523,8 +633,8 @@ body {
 }
 
 .btn-giant-whatsapp {
-    background: hwb(107 6% 34%); /* Amarillo sol resalta hermoso contra el fondo azul agua */
-    color: #ffffff;
+    background: #13e821;
+    color: #0f172a;
     padding: 22px 45px;
     border-radius: 50px;
     text-decoration: none;
@@ -533,20 +643,21 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 12px;
-    box-shadow: 0 10px 30px rgba(245, 158, 11, 0.4);
+    box-shadow: 0 10px 30px rgba(19, 232, 33, 0.4);
     transition: all 0.3s ease;
-    letter-spacing: 0.5px;
 }
 
 .btn-giant-whatsapp:hover {
     transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 15px 40px rgba(11, 226, 245, 0.6);
-    background: hsl(194, 88%, 80%);
+    box-shadow: 0 15px 40px rgba(19, 232, 33, 0.6);
+}
+
+.animate-floating {
+    animation: waveFloat 3s ease-in-out infinite;
 }
 
 /* FOOTER */
 .industrial-footer {
-    /* Un azul océano muy profundo para anclar la página, sin ser negro */
     background: #082f49;
     padding: 40px 20px;
     border-top: 5px solid #0ea5e9;
@@ -571,7 +682,7 @@ body {
     font-size: 13px;
 }
 
-/* MEDIA QUERIES (RESPONSIVO) */
+/* MEDIA QUERIES (RESPONSIVO Y CORREGIDO) */
 @media (max-width: 768px) {
     .main-header {
         padding: 15px 20px;
@@ -583,10 +694,6 @@ body {
     .logo {
         justify-content: center;
         width: 100%;
-    }
-
-    .logo-text {
-        text-align: center;
     }
     
     .nav-menu {
@@ -629,7 +736,6 @@ body {
         padding: 18px 25px;
         display: inline-block;
         width: 100%;
-        box-sizing: border-box;
     }
     
     .footer-layout {
@@ -637,17 +743,24 @@ body {
         text-align: center;
         gap: 10px;
     }
-}
+
+    .projects-section-custom {
+        padding: 80px 0;
+    }
+    
+    .project-card-massi .mask-massi {
+        aspect-ratio: 4 / 3; 
+    }
+    
+    .project-card-massi .service-card-content {
+        padding: 35px 20px 20px 20px;
+    }
+} /* LLAVE DE CIERRE QUE FALTABA AQUÍ */
 
 /* ANIMACIONES KEYFRAMES NATIVAS */
 @keyframes fadeInScale {
     from { opacity: 0; transform: scale(0.97) translateY(20px); }
     to { opacity: 1; transform: scale(1) translateY(0); }
-}
-
-@keyframes anchorSway {
-    0%, 100% { transform: rotate(0deg); }
-    50% { transform: rotate(10deg) translateY(-2px); }
 }
 
 @keyframes constantRotation {
@@ -664,166 +777,4 @@ body {
 @keyframes waveFloat {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-8px); }
-}
-
-/* ==========================================================================
-   ANIMACIÓN EXCLUSIVA: GALERÍA DINÁMICA HOVER - PROYECTO MASSI
-   ========================================================================== */
-
-.mask-massi .hover-gallery {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.5s ease-in-out;
-    z-index: 2;
-}
-
-.mask-massi .gallery-img {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transform: scale(1.08); 
-    transition: transform 0.6s ease-out;
-}
-
-.project-card-massi:hover .mask-massi {
-    background-image: none !important; 
-    filter: brightness(1) grayscale(0);
-}
-
-.project-card-massi:hover .hover-gallery {
-    opacity: 1; 
-}
-
-.project-card-massi:hover .gallery-img {
-    animation: marineGalleryCycle 12s infinite linear;
-}
-
-.project-card-massi:hover .img-1 { animation-delay: 0s;   transform: scale(1); }
-.project-card-massi:hover .img-2 { animation-delay: 3s;   transform: scale(1); }
-.project-card-massi:hover .img-3 { animation-delay: 6s;   transform: scale(1); }
-.project-card-massi:hover .img-4 { animation-delay: 9s;   transform: scale(1); }
-
-@keyframes marineGalleryCycle {
-    0% { opacity: 0; transform: scale(1.08); }
-    4% { opacity: 1; transform: scale(1); }
-    25% { opacity: 1; transform: scale(1); }
-    29% { opacity: 0; transform: scale(0.96); }
-    100% { opacity: 0; }
-}
-
-.animate-floating {
-    animation: waveFloat 3s ease-in-out infinite;
-}
-
-/* ==========================================================================
-   OPTIMIZACIONES EXCLUSIVAS PARA LA SECCIÓN PROYECTOS
-   ========================================================================== */
-
-/* Fondo arena claro para proyectos */
-.projects-section-custom {
-    padding: 120px 0;
-    background-color: #f8fafc;
-}
-
-.proyecto-unica-grid {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.project-card-massi {
-    width: 100%;
-    max-width: 850px; 
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 15px 40px rgba(14, 165, 233, 0.08);
-    border: 1px solid rgba(14, 165, 233, 0.1);
-    overflow: hidden;
-}
-
-.project-card-massi .mask-massi {
-    height: auto; 
-    width: 100%;
-    aspect-ratio: 16 / 9; 
-    border-bottom: 3px solid #469e23; 
-}
-
-.mask-massi .gallery-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    object-position: center;
-}
-
-@media (max-width: 768px) {
-    .projects-section-custom {
-        padding: 80px 0;
-    }
-    
-    .project-card-massi .mask-massi {
-        aspect-ratio: 4 / 3; 
-    }
-    
-    .project-card-massi .service-card-content {
-        padding: 35px 20px 20px 20px;
-    }
-
-/* Contenedor principal que oculta el desborde */
-.logo-slider-wrapper {
-    overflow: hidden;
-    padding: 40px 0;
-    background: #fff8f8; /* Un fondo sutil para que contrasten los logos */
-    position: relative;
-    width: 100%;
-}
-
-/* El "tren" que lleva los vagones de logos */
-.logo-slider {
-    display: flex;
-    width: max-content;
-}
-
-/* Cada grupo de logos */
-.logo-slide-track {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 60px; /* Espacio entre logos */
-    padding-right: 60px; /* Debe coincidir con el gap para que no salte */
-    animation: scroll 25s linear infinite;
-}
-
-/* Estilo individual para los logos */
-.logo-slide-track img {
-    height: 75px; /* Ajusta la altura para que todos se vean uniformes */
-    width: auto;
-    object-fit: contain;
-    filter: grayscale(0%) opacity(100%); /* Efecto elegante: escala de grises */
-    transition: filter 0.3s ease, transform 0.3s ease;
-}
-
-/* Al pasar el mouse, el logo toma su color original */
-.logo-slide-track img:hover {
-    filter: grayscale(0%) opacity(100%);
-    transform: scale(1.08); /* Pequeño efecto de zoom */
-}
-
-/* Pausar la animación cuando el usuario pasa el cursor sobre el slider */
-.logo-slider-wrapper:hover .logo-slide-track {
-    animation-play-state: paused;
-}
-
-/* LA ANIMACIÓN: Mueve el primer track exactamente el 100% de su ancho */
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
 }

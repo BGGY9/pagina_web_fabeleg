@@ -262,7 +262,7 @@ body {
 .section-tagline {
     font-size: 13px;
     font-weight: 800;
-    color: #0ea5e9;
+    color: #000000;
     letter-spacing: 3px;
     display: block;
     margin-bottom: 10px;
@@ -771,4 +771,59 @@ body {
     .project-card-massi .service-card-content {
         padding: 35px 20px 20px 20px;
     }
+
+/* Contenedor principal que oculta el desborde */
+.logo-slider-wrapper {
+    overflow: hidden;
+    padding: 40px 0;
+    background: #fff8f8; /* Un fondo sutil para que contrasten los logos */
+    position: relative;
+    width: 100%;
+}
+
+/* El "tren" que lleva los vagones de logos */
+.logo-slider {
+    display: flex;
+    width: max-content;
+}
+
+/* Cada grupo de logos */
+.logo-slide-track {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 60px; /* Espacio entre logos */
+    padding-right: 60px; /* Debe coincidir con el gap para que no salte */
+    animation: scroll 25s linear infinite;
+}
+
+/* Estilo individual para los logos */
+.logo-slide-track img {
+    height: 75px; /* Ajusta la altura para que todos se vean uniformes */
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(0%) opacity(100%); /* Efecto elegante: escala de grises */
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Al pasar el mouse, el logo toma su color original */
+.logo-slide-track img:hover {
+    filter: grayscale(0%) opacity(100%);
+    transform: scale(1.08); /* Pequeño efecto de zoom */
+}
+
+/* Pausar la animación cuando el usuario pasa el cursor sobre el slider */
+.logo-slider-wrapper:hover .logo-slide-track {
+    animation-play-state: paused;
+}
+
+/* LA ANIMACIÓN: Mueve el primer track exactamente el 100% de su ancho */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
 }

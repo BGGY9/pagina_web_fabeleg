@@ -23,6 +23,9 @@ body {
     width: auto;
     object-fit: contain;
     display: block;
+    filter: brightness(1.05) contrast(1.05);
+    /* ¡EL TRUCO CLAVE! Oculta el fondo blanco del PNG y lo vuelve transparente */
+    mix-blend-mode: multiply; 
 }
 
 /* HELPER CLASSES CORREGIDAS */
@@ -38,15 +41,14 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    /* Color blanco totalmente sólido (sin opacidad/transparencia) */
-    background: #ffffffdc; 
+    background: #ffffff; /* De vuelto a blanco limpio para que destaque tu PNG transparente */
     padding: 15px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
     border-bottom: 2px solid rgba(198, 185, 255, 0.2);
-    box-shadow: 0 4px 20px rgba(14, 165, 233, 0.15); /* Sombra un poco más marcada para separar del fondo */
+    box-shadow: 0 4px 20px rgba(14, 165, 233, 0.15); 
 }
 
 .logo {

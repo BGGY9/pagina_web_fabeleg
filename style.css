@@ -38,15 +38,15 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(255, 254, 254, 0.855);
-    backdrop-filter: blur(12px);
+    /* Color blanco totalmente sólido (sin opacidad/transparencia) */
+    background: #ffffffdc; 
     padding: 15px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
     border-bottom: 2px solid rgba(198, 185, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(14, 165, 233, 0.1);
+    box-shadow: 0 4px 20px rgba(14, 165, 233, 0.15); /* Sombra un poco más marcada para separar del fondo */
 }
 
 .logo {
